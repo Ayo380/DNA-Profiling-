@@ -1,0 +1,22 @@
+
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   12
+ # of elements inserted: 30
+ # of elements accessed: 49
+*********************************************************
+ourvector<i> created that many vectors because, it has each vector for every element inserted in ourvector<4DATA> and also another vector was created to hold the longest str count after the data has been processed. That many data was inserted while reading(load_db and it helper functions) from the file and which processing(process() and its helper functions) the data for the longest of the repetition. It has that many data accessed when we were searching(search() and its helper functions) it needed check for a match in one vector atleast 3x in each loop to find the match.  
+*********************************************************
+ourvector<4DATA> stats:
+ # of vectors created:   1
+ # of elements inserted: 3
+ # of elements accessed: 120
+*********************************************************
+Ourvector<DATA> has 1 vector created because it was a vector of struct and it only need to be created once and it was done in the main() function. It has 3 element inserted into it because the vector help the struct for the database and there were 3 names in the data base. 120 element was accessed because the struct contained a ourvector<char> name which hold the name per each character of the string and ourvector<int> match which hold the number of str counts for each person. 
+*********************************************************
+ourvector<c> stats:
+ # of vectors created:   14
+ # of elements inserted: 244
+ # of elements accessed: 2002
+*********************************************************
+Ourvector<c> has 14 vectors created because, 3 vectors came from the ourvector<DATA>, and i created some temp vectors while processing(process()and it helper functions) the data. I also created a vector for the str the needed to be processed and the vector that would hold the dna sample being giving. 244 elements where inserted because, the name were stored(load_db and its helper function), strs(load_db and its helper function), each indvivual strs(load_db and its helper function) and the dnas(load_dna and its helper function) stored aswell. That much element where accessed because during the process(process() and its helper functions) the algorithm need to access atleast one of the character in dna vector more than one and the character for each_str at to the same size as the dna vector. 
